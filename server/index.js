@@ -17,6 +17,10 @@ connectDB();
 
 const PORT = process.env.PORT || 5000;
 
+// const post = async() => {
+    
+// }
+ 
 app.listen(PORT, () => {
     console.log(`server runing on port ${PORT}`);
 })
