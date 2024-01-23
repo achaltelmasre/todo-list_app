@@ -3,13 +3,13 @@ import { model, Schema } from "mongoose";
 const tasksSchema = new Schema
     (
         {
-        taskName :{
+        title :{
            type: String,
            required:true
         },
         description :{
           type: String,
-          required: true
+          required:true
         },
         priority :{
             type: String,
@@ -17,9 +17,9 @@ const tasksSchema = new Schema
         }
     },
     {
-      timestamp: true,
+      timestamps: true,
     })
 
-    const Tasks = model('Task', tasksSchema);
+    const Tasks = model('Tasks', tasksSchema);
 
 export default Tasks; 
