@@ -1,4 +1,12 @@
+
 .contain{
-  display: flex;
-  flex-wrap: wrap;
+ border: 1px solid black;
+ margin: 10px auto;
+ border-radius: 10px;
+ width: 400px;
+text-align: start;
+padding-left: 20px;
+ background-color: rgb(243, 72, 114);
+ color: white;
+ 
 }
