@@ -3,10 +3,18 @@
  border: 1px solid black;
  margin: 10px auto;
  border-radius: 10px;
- width: 400px;
+ width: 450px;
 text-align: start;
 padding-left: 20px;
- background-color: rgb(243, 72, 114);
- color: white;
+ background-color: white;
  
+ 
+}
+
+.form{
+  margin: 10px auto !important ;
+
+}
+.delbtn{
+  cursor: pointer;
 }
