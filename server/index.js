@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import { getApiHealth } from './controllers/health.js';
-import { deleteApiTask, getApiTasks, postApiTask , putApiTask} from './controllers/task.js';
+import { deleteApiTask, getAPiTaskId, getApiTasks, postApiTask , putApiTask} from './controllers/task.js';
 
 const app = express();
 app.use(express.json());
@@ -29,6 +29,8 @@ app.get('/api/tasks', getApiTasks);
 app.put('/api/task/:id', putApiTask);
 
 app.delete('/api/task/:id', deleteApiTask)
+
+app.get('/api/task/:id', getAPiTaskId)
 
  
 app.listen(PORT, () => {

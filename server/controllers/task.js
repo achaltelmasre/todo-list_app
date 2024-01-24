@@ -77,8 +77,19 @@ const deleteApiTask = async (req, res) => {
     })
 }
 
+//get/task/:id
+const getAPiTaskId = async (req, res) => {
+    const { _id } =  req.params;
 
+    const task = await Tasks.find({user: _id})
 
+    return res.json({
+        success: true,
+        message : "Tasks fetched successfully",
+        data: task
+    });
+
+}
 
     
-export { postApiTask , getApiTasks, putApiTask, deleteApiTask }
+export { postApiTask , getApiTasks, putApiTask, deleteApiTask , getAPiTaskId}
